@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources.md",
+                "file": "Welcome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resources"
+              "title": "Welcome"
             }
           }
         ],
@@ -161,11 +161,12 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,8 +181,8 @@
   },
   "active": "4ee7809627d8e147",
   "lastOpenFiles": [
-    "yash/placeholder.md",
     "Resources.md",
+    "yash/placeholder.md",
     "Welcome.md",
     "yash"
   ]
