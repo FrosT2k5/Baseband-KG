@@ -64,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#resources",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,11 +178,13 @@
   },
   "active": "898260516d9a12f1",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Resources.md",
+    "yash/BinaryExploitationResources.md",
     "Images/Binder.png",
     "yash/BinderBasics.md",
     "yash/placeholder.md",
     "Images",
-    "Resources.md",
     "Welcome.md",
     "yash"
   ]
