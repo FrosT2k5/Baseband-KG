@@ -15,7 +15,7 @@ Binder Exploitation
 https://www.youtube.com/watch?v=l38YQxrk7V8
 https://www.youtube.com/watch?v=yrLXvmzUQME
 
-CVE-2019-2215
+# CVE-2019-2215
 1) https://googleprojectzero.github.io/0days-in-the-wild/0day-RCAs/2019/CVE-2019-2215.html
 2) https://www.youtube.com/watch?v=TAwQ4ezgEIo
 3) https://www.youtube.com/watch?v=yrLXvmzUQME
@@ -25,13 +25,13 @@ CVE-2019-2215
 7) https://versprite.com/vs-labs/exploring-android-vulnerabilities-and-binder-part-ii/
 8) Our own report as well.
 
-CVE-2022-20421
+# CVE-2022-20421
 1) https://github.com/0xkol/badspin
 2) https://0xkol.github.io/assets/files/OffensiveCon23_Racing_Against_the_Lock__Exploiting_Spinlock_UAF_in_the_Android_Kernel.pdf
 3) https://www.youtube.com/watch?v=E3CVDOlcHC4
 4) Our own report as well.
 
-CVE-2023-20938
+# CVE-2023-20938
 1) https://www.youtube.com/watch?v=U-xSM159YLI
 2) https://androidoffsec.withgoogle.com/posts/attacking-android-binder-analysis-and-exploitation-of-cve-2023-20938/
 3) https://r1971d3.medium.com/android-binder-attack-matrix-cve-2023-20938-cve-2023-21255-uaf-details-article-1-4cc2eb3919f9
