@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "2efda037efaaf6cd",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Images/binderschematic.png"
+              },
+              "icon": "lucide-image",
+              "title": "binderschematic"
+            }
+          },
+          {
             "id": "4ee7809627d8e147",
             "type": "leaf",
             "state": {
@@ -178,12 +190,13 @@
   },
   "active": "898260516d9a12f1",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "Resources.md",
     "yash/BinaryExploitationResources.md",
-    "Images/Binder.png",
+    "Resources.md",
     "yash/BinderBasics.md",
+    "Images/Binder.png",
+    "Images/binderschematic.png",
     "yash/placeholder.md",
+    "Untitled.canvas",
     "Images",
     "Welcome.md",
     "yash"
