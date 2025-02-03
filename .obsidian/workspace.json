@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "yash/BinderExploitation.md",
+                "file": "Resources.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BinderExploitation"
+              "title": "Resources"
             }
           }
         ],
@@ -182,8 +182,8 @@
   },
   "active": "fa011897d11a6a27",
   "lastOpenFiles": [
-    "Resources.md",
     "yash/BinderExploitation.md",
+    "Resources.md",
     "yash/BinaryExploitationResources.md",
     "yash/BinderBasics.md",
     "yash/placeholder.md",
