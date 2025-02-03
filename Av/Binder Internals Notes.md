@@ -5,7 +5,7 @@
  - All untrusted apps on Android are sandboxed and inter-process communication mostly occurs through Binder. 
   - untrusted apps can use binder using  char device `/dev/binder` . Binder is implemented as a kernel drivers .
   - Binder Works similar to io-uring in some aspects such as that userspace needs to allocate a buffer through which the driver and userpsace  can communicate regarding the commands .
--  we  can  communicate with the binder interface using ioctl calls .
+-  we  can  communicate with the binder interface using ioctl calls below are commands for binder .
 
 ```
   static const char * const binder_command_strings[] = {
@@ -38,11 +38,11 @@
 To understand the high level implementation of the /dev/binder refer to  [this](https://medium.com/swlh/binder-architecture-and-core-components-38089933bba):  
 
 
-##  Vulnerabilties
+## Vulnerabilties
 
-###  CVE-2019-2215
+### CVE-2019-2215
 
-CVE-2019-2215 is Use-After-Free vulnerability in the binder kernel driver . driver. The `binder_thread` struct, defined in `drivers/android/binder.c`, has the member `wait` of the `wait_queue_head_t` struct type. `wait` is still referenced by a pointer in `epoll`, even after the `binder_thread` struct containing it is freed.
+CVE-2019-2215 is Use-After-Free vulnerability in the binder kernel driver . The `binder_thread` struct, defined in `drivers/android/binder.c`, has the member `wait` of the `wait_queue_head_t` struct type. `wait` is still referenced by a pointer in `epoll`, even after the `binder_thread` struct containing it is freed.
 
 ### Understanding the vulnerability 
 
@@ -65,3 +65,21 @@ list_del(&wq_entry->entry);
 -  Exploit described in the project zero blog [post](https://googleprojectzero.blogspot.com/2019/11/bad-binder-android-in-wild-exploit.html) uses struct iovecs of size 0x10 to overlap our struct `wait_queue_head_t`  which can be to used to leak kernel memory and using the recvmsg() on a socket pair gain arbitary write into kernel memory.
 - pipes are used in order to allow the exploit to block threads and control the race-condition while making it reliable.
 - when leaking the `struct task_struct *` we use pipes in order to block threads and continue execution from a ideal state (we use writev and readv on the pipfds).
+
+## Alternate exploit stratergy ...??? 
+
+use of struct pipe_buffer for heap spray ....?
+```C
+struct pipe_buffer { 
+       struct page *page; 
+       unsigned int offset, len; 
+       const struct pipe_buf_operations *ops; 
+       unsigned int flags; 
+       unsigned long private; 
+};
+
+```
+
+- using the UAF we change the struct  page * to address of the wait queue we can then over write the struct pipe_buffer and  gain a powerful write primitive.
+
+ - another potentially useful primitive will be to `flags |= PIPE_BUF_FLAG_CAN_MERGE`  which will allow use to write to read only files by essentially reviving the `dirtypipe` vulnerability.   Read [this](https://github.com/veritas501/pipe-primitive)
