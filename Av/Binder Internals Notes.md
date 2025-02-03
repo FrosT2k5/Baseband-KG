@@ -46,4 +46,22 @@ CVE-2019-2215 is Use-After-Free vulnerability in the binder kernel driver . driv
 
 ### Understanding the vulnerability 
 
+So essential the vulnerability is that even after calling `BINDER_THREAD_EXIT`  which frees `struct binder_thread` associated with the proc . There exists a reference to the `wait_queue_head_t wait` in the poll data structure . So when we cleanup / call EPOLL_CTL_DEL  we call  `__remove_wait_queue` on the wait queue which leads to a UAF .
 
+
+```C
+static inline void
+
+__remove_wait_queue(struct wait_queue_head *wq_head, struct wait_queue_entry *wq_entry)
+
+{
+
+list_del(&wq_entry->entry);
+
+}
+```
+ 
+### Summary of  Exploit Strategy     
+-  Exploit described in the project zero blog [post](https://googleprojectzero.blogspot.com/2019/11/bad-binder-android-in-wild-exploit.html) uses struct iovecs of size 0x10 to overlap our struct `wait_queue_head_t`  which can be to used to leak kernel memory and using the recvmsg() on a socket pair gain arbitary write into kernel memory.
+- pipes are used in order to allow the exploit to block threads and control the race-condition while making it reliable.
+- when leaking the `struct task_struct *` we use pipes in order to block threads and continue execution from a ideal state (we use writev and readv on the pipfds).
