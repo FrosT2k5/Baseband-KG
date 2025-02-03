@@ -38,4 +38,12 @@
 To understand the high level implementation of the /dev/binder refer to  [this](https://medium.com/swlh/binder-architecture-and-core-components-38089933bba):  
 
 
-## Binder Vulnerabilties
+##  Vulnerabilties
+
+###  CVE-2019-2215
+
+CVE-2019-2215 is Use-After-Free vulnerability in the binder kernel driver . driver. The `binder_thread` struct, defined in `drivers/android/binder.c`, has the member `wait` of the `wait_queue_head_t` struct type. `wait` is still referenced by a pointer in `epoll`, even after the `binder_thread` struct containing it is freed.
+
+### Understanding the vulnerability 
+
+
