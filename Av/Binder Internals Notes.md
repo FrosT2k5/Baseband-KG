@@ -80,6 +80,6 @@ struct pipe_buffer {
 
 ```
 
-- using the UAF we change the struct  page * to address of the wait queue we can then over write the struct pipe_buffer and  gain a powerful write primitive.
+- using the UAF we change the struct  page * to address of the wait queue we can then over write the struct pipe_buffer and  gain a powerful write primitive.  (Need to be careful with spinlock of the struct wait_queue_head_t )
 
  - another potentially useful primitive will be to `flags |= PIPE_BUF_FLAG_CAN_MERGE`  which will allow use to write to read only files by essentially reviving the `dirtypipe` vulnerability.   Read [this](https://github.com/veritas501/pipe-primitive)
