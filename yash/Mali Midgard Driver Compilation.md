@@ -36,3 +36,6 @@ How to compile Mali Midgard drivers from source
 	- compile with codeql wrapper
 		`codeql database create ~/midgarddb --language=cpp --command="make CC=clang ARCH=arm64 LLVM=1 CROSS_COMPILE=aarch64-linux-gnu- KDIR=~/kernel" --overwrite`
 	- This will initialize the midgard codeql db at ~/midgarddb folder after successful compilation
+
+
+Repo with source code and precompiled database: https://github.com/FrosT2k5/midgard_driver_codeql/
