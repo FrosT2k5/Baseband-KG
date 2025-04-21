@@ -1,57 +1,31 @@
 #resources
 
-Android Attack Surface 
-https://www.youtube.com/watch?v=squuwVQiPgg
-
-Binder Internals
-https://androidoffsec.withgoogle.com/posts/binder-internals/
-https://medium.com/swlh/binder-architecture-and-core-components-38089933bba
-https://null-android-pentesting.netlify.app/src/android-internals#android-architecture-and-binder
-https://dispatchersdotplayground.hashnode.dev/interprocess-communication-and-the-binder-interface\
-https://www.youtube.com/watch?v=Fb4UoqXPEtI&t=1s&pp=ygUbYW5kcm9pZCBiaW5kZXIgZXhwbG9pdGFpdG9u
-https://r1971d3.medium.com/android-binder-attack-matrix-introduction-450d31d1d951
-
-Binder Exploitation
-https://www.youtube.com/watch?v=l38YQxrk7V8
-https://www.youtube.com/watch?v=yrLXvmzUQME
-
-# CVE-2019-2215
-1) https://googleprojectzero.github.io/0days-in-the-wild/0day-RCAs/2019/CVE-2019-2215.html
-2) https://www.youtube.com/watch?v=TAwQ4ezgEIo
-3) https://www.youtube.com/watch?v=yrLXvmzUQME
-4) https://github.com/kangtastic/cve-2019-2215
-5) https://duasynt.com/blog/cve-2019-2215-android-binder-uaf-s9
-6) https://versprite.com/vs-labs/exploring-android-vulnerabilities-and-binder-part-i/
-7) https://versprite.com/vs-labs/exploring-android-vulnerabilities-and-binder-part-ii/
-8) Our own report as well.
-
-# CVE-2022-20421
-1) https://github.com/0xkol/badspin
-2) https://0xkol.github.io/assets/files/OffensiveCon23_Racing_Against_the_Lock__Exploiting_Spinlock_UAF_in_the_Android_Kernel.pdf
-3) https://www.youtube.com/watch?v=E3CVDOlcHC4
-4) Our own report as well.
-
-# CVE-2023-20938
-1) https://www.youtube.com/watch?v=U-xSM159YLI
-2) https://androidoffsec.withgoogle.com/posts/attacking-android-binder-analysis-and-exploitation-of-cve-2023-20938/
-3) https://r1971d3.medium.com/android-binder-attack-matrix-cve-2023-20938-cve-2023-21255-uaf-details-article-1-4cc2eb3919f9
-4) https://r1971d3.medium.com/android-binder-attack-matrix-exploitation-of-cve-2023-20938-article-2-6215160e3373 (this dude literally copied slides from the offensivecon talk + chatgpt)
+[Firmwire Open Analysis Resources](https://github.com/FirmWire/ndss22_experiments)
+[Firmwire Setup and Documentation](https://firmwire.github.io/docs/)
+[FirmWire Talk Slides](https://i.blackhat.com/USA-20/Wednesday/us-20-Hernandez-Emulating-Samsungs-Baseband-For-Security-Testing.pdf) and [Talk Video](https://www.youtube.com/watch?v=wkWUU8820ro) by Grant-H
+[FirmWire Research Paper](https://hernan.de/research/papers/firmwire-ndss22-hernandez.pdf)
+[Shannon Reversing Ghidra Loader and info](https://github.com/grant-h/ShannonBaseband) by Grant-H
+[Shannon Reversing IDA plugin and resources](https://github.com/Comsecuris/shannonRE) by Comsecuris
+[Baseband Attacks: Remote Exploitation of Memory Corruptions in Cellular Protocol Stacks](https://www.usenix.org/system/files/conference/woot12/woot12-final24.pdf) 2012 research paper
+[Awesome Baseband Research Resources](https://github.com/lololosys/awesome-baseband-research?tab=readme-ov-file)
+[Baseband Basics Slides](https://github.com/comaeio/OPCDE/blob/master/2018/Kenya/Charles%20Nitay%20Anna%20-%20The%20Baseband%20Basics.pdf) from a 2018 talk
+[A walk with shannon](https://www.youtube.com/watch?v=6bpxrfB9ioo) talk by Amat Cama, 2018
+https://github.com/FirmWire/FirmWire/issues/8
+firmware images: https://zenodo.org/records/6516030
 
 
-Android Binder Tracing & Tooling
-https://github.com/foundryzero/binder-trace
-https://newandroidbook.com/tools/jtrace.html
-https://codeshare.frida.re/@dvdface/trace-android-binder-call-from-binderproxy/
-https://foundryzero.co.uk/2022/08/30/binder-tracing-part-1.html
-https://foundryzero.co.uk/2022/11/14/binder-tracing-part-2.html
-
-Guides and tutorials:
-Using GDB, short guide: https://www.youtube.com/watch?v=Dq8l1_-QgAc
-Using Obsidian: https://www.youtube.com/watch?v=hSTy_BInQs8
-Binary Exploitation: 
-https://www.youtube.com/playlist?list=PLchBW5mYosh_F38onTyuhMTt2WGfY-yr7
-https://github.com/Shreyas-Penkar/Ultimate-Linux-Exploit-Development
-
-This notes obsidian repo
-https://github.com/Shreyas-Penkar/Android-Binder-KG
-
+- [Full Chain Baseband Exploits, Part 1](https://labs.taszk.io/articles/post/full_chain_bb_part1/) - [Part 2](https://labs.taszk.io/articles/post/full_chain_bb_part2/) - [Part 3](https://labs.taszk.io/articles/post/full_chain_bb_part3/)
+- [Advanced Hexagon DIAG - Alisa](https://www.youtube.com/watch?v=94NwlrtGF7I)
+ - [slides](https://zerodayengineering.com/research/slides/CCC2020_AdvancedHexagonDiag.pdf)
+- [Hardening cellular basebands in Android](https://security.googleblog.com/2023/12/hardening-cellular-basebands-in-android.html?trk=feed_main-feed-card_feed-article-content&m=1)
+- [Hardening Firmware Across the Android Ecosystem](https://security.googleblog.com/2023/02/hardening-firmware-across-android.html)
+- [Deep Dive: Qualcomm MSM Linux Kernel & ARM Mali GPU 0-day Exploit Attacks of October 2023](https://zerodayengineering.com/insights/qualcomm-msm-arm-mali-0days.html)
+- [OffensiveCon Training Syllabus](https://www.offensivecon.org/trainings/2024/exploiting-basebands-and-application-processors.html)
+- [Ghidra nanoMIPS ISA module](https://www.nccgroup.com/us/research-blog/ghidra-nanomips-isa-module/)
+- [How To Hack Shannon Baseband (from A Phone)](https://www.youtube.com/watch?v=NnmAikOTHaA) by Natalie Silvanovich (2023)
+ - [slides](https://hardwear.io/usa-2023/presentation/how-to-hack-shannon-baseband.pdf)
+- [Overcoming State: Finding Baseband Vulnerabilities by Fuzzing Layer-2](https://www.youtube.com/watch?v=mXijb6ckU2c) - 2024
+- [awesome-baseband-research](https://github.com/lololosys/awesome-baseband-research?tab=readme-ov-file)
+- [Samsung's Shannon Baseband Tool Repository Build and test ShannonLoader](https://github.com/grant-h/ShannonBaseband)
+- [git - Mirror of Samsung Shannon firmware images](https://github.com/grant-h/ShannonFirmware)
+- [BH - Emulating Samsung's Baseband for Security Testing](https://www.youtube.com/watch?v=wkWUU8820ro)
