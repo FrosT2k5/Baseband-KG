@@ -1,17 +1,17 @@
 #resources
 
-[Firmwire Open Analysis Resources](https://github.com/FirmWire/ndss22_experiments)
-[Firmwire Setup and Documentation](https://firmwire.github.io/docs/)
-[FirmWire Talk Slides](https://i.blackhat.com/USA-20/Wednesday/us-20-Hernandez-Emulating-Samsungs-Baseband-For-Security-Testing.pdf) and [Talk Video](https://www.youtube.com/watch?v=wkWUU8820ro) by Grant-H
-[FirmWire Research Paper](https://hernan.de/research/papers/firmwire-ndss22-hernandez.pdf)
-[Shannon Reversing Ghidra Loader and info](https://github.com/grant-h/ShannonBaseband) by Grant-H
-[Shannon Reversing IDA plugin and resources](https://github.com/Comsecuris/shannonRE) by Comsecuris
-[Baseband Attacks: Remote Exploitation of Memory Corruptions in Cellular Protocol Stacks](https://www.usenix.org/system/files/conference/woot12/woot12-final24.pdf) 2012 research paper
-[Awesome Baseband Research Resources](https://github.com/lololosys/awesome-baseband-research?tab=readme-ov-file)
-[Baseband Basics Slides](https://github.com/comaeio/OPCDE/blob/master/2018/Kenya/Charles%20Nitay%20Anna%20-%20The%20Baseband%20Basics.pdf) from a 2018 talk
-[A walk with shannon](https://www.youtube.com/watch?v=6bpxrfB9ioo) talk by Amat Cama, 2018
-https://github.com/FirmWire/FirmWire/issues/8
-firmware images: https://zenodo.org/records/6516030
+- [Firmwire Open Analysis Resources](https://github.com/FirmWire/ndss22_experiments)
+- [Firmwire Setup and Documentation](https://firmwire.github.io/docs/)
+- [FirmWire Talk Slides](https://i.blackhat.com/USA-20/Wednesday/us-20-Hernandez-Emulating-Samsungs-Baseband-For-Security-Testing.pdf) and [Talk Video](https://www.youtube.com/watch?v=wkWUU8820ro) by Grant-H
+- [FirmWire Research Paper](https://hernan.de/research/papers/firmwire-ndss22-hernandez.pdf)
+- [Shannon Reversing Ghidra Loader and info](https://github.com/grant-h/ShannonBaseband) by Grant-H
+- [Shannon Reversing IDA plugin and resources](https://github.com/Comsecuris/shannonRE) by Comsecuris
+- [Baseband Attacks: Remote Exploitation of Memory Corruptions in Cellular Protocol Stacks](https://www.usenix.org/system/files/conference/woot12/woot12-final24.pdf) 2012 research paper
+- [Awesome Baseband Research Resources](https://github.com/lololosys/awesome-baseband-research?tab=readme-ov-file)
+- [Baseband Basics Slides](https://github.com/comaeio/OPCDE/blob/master/2018/Kenya/Charles%20Nitay%20Anna%20-%20The%20Baseband%20Basics.pdf) from a 2018 talk
+- [A walk with shannon](https://www.youtube.com/watch?v=6bpxrfB9ioo) talk by Amat Cama, 2018
+- https://github.com/FirmWire/FirmWire/issues/8
+- firmware images: https://zenodo.org/records/6516030
 
 
 - [Full Chain Baseband Exploits, Part 1](https://labs.taszk.io/articles/post/full_chain_bb_part1/) - [Part 2](https://labs.taszk.io/articles/post/full_chain_bb_part2/) - [Part 3](https://labs.taszk.io/articles/post/full_chain_bb_part3/)
