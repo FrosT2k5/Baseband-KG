@@ -27,12 +27,48 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources.md",
+                "file": "Call Stack Vulnerability (CC1).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resources"
+              "title": "Call Stack Vulnerability (CC1)"
+            }
+          },
+          {
+            "id": "11920e8ca37a3c75",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/cc_CheckBearerCompatibility.png"
+              },
+              "icon": "lucide-image",
+              "title": "cc_CheckBearerCompatibility"
+            }
+          },
+          {
+            "id": "eefeebc0fa5dc91e",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/CallSetupSpec.png"
+              },
+              "icon": "lucide-image",
+              "title": "CallSetupSpec"
+            }
+          },
+          {
+            "id": "977b7b796b2359e7",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/CallSetupSpec.png"
+              },
+              "icon": "lucide-image",
+              "title": "CallSetupSpec"
             }
           },
           {
@@ -107,7 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "f4c6c17179ea0bc2",
@@ -196,10 +232,18 @@
   },
   "active": "1501f2b39ca92f6a",
   "lastOpenFiles": [
+    "FirmWire 2022 research setup.md",
+    "Call Stack Vulnerability (CC1).md",
+    "images/bc_utilities_bearer_cap_ptr.png",
+    "images/pal_MemInterface_1.png",
+    "Resources.md",
+    "images/cc_CheckBearerCompatibility.png",
+    "images/BearerCapabilityIESpec.png",
+    "Pasted image 20250622131738.png",
+    "images/CallSetupSpec.png",
+    "images",
     "FirmWire Console.md",
     "FirmWire Setup.md",
-    "FirmWire 2022 research setup.md",
-    "Resources.md",
     "Untitled 1.md",
     "yash/CodeQL Database Querying.md",
     "yash/Mali Midgard Driver Compilation.md",
