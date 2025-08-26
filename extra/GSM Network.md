@@ -130,3 +130,20 @@ Installed OpenBTS from a fork that claims to support latest UHD drivers and ubun
 https://github.com/PentHertz/OpenBTS
 
 Also tried the original OpenBTS by RangeNetworks in a docker container
+
+OpenBTS seems to receive some data when the created GSM network is created in the device. But still the registration fails.
+Following messages are logged in OpenBTS Shell:
+```
+OpenBTS> ALERT 2127:2153 2025-08-26T09:23:46.0 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:23:47.1 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:23:48.2 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:23:55.0 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:23:56.2 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:23:57.5 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:24:15.3 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:24:16.3 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:24:17.5 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input
+ALERT 2127:2153 2025-08-26T09:24:24.8 Transceiver.cpp:414:pullRadioVector: 
+```
+
+the fork by PentHertz crashes time to time due to buffer overflows randomly.
