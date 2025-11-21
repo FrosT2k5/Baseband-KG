@@ -27,24 +27,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Call Stack Vulnerability (CC1).md",
+                "file": "FirmWire 2022 research setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Call Stack Vulnerability (CC1)"
+              "title": "FirmWire 2022 research setup"
+            }
+          },
+          {
+            "id": "2f4654adc95b830d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
             }
           },
           {
             "id": "11920e8ca37a3c75",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "images/cc_CheckBearerCompatibility.png"
+                "file": "SrsRAN Configuration.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "cc_CheckBearerCompatibility"
+              "icon": "lucide-file",
+              "title": "SrsRAN Configuration"
             }
           },
           {
@@ -86,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -221,6 +235,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -230,21 +245,26 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "1501f2b39ca92f6a",
+  "active": "11920e8ca37a3c75",
   "lastOpenFiles": [
-    "FirmWire 2022 research setup.md",
-    "Call Stack Vulnerability (CC1).md",
-    "images/bc_utilities_bearer_cap_ptr.png",
-    "images/pal_MemInterface_1.png",
-    "Resources.md",
-    "images/cc_CheckBearerCompatibility.png",
-    "images/BearerCapabilityIESpec.png",
-    "Pasted image 20250622131738.png",
-    "images/CallSetupSpec.png",
-    "images",
     "FirmWire Console.md",
     "FirmWire Setup.md",
+    "OpenCells Sim Card Programming.md",
+    "SrsRAN Configuration.md",
+    "SrsRAN Installation.md",
+    "Call Stack Vulnerability (CC1).md",
+    "FirmWire 2022 research setup.md",
+    "images/CallSetupSpec.png",
+    "images/bc_utilities_bearer_cap_ptr.png",
+    "extra/GSM Network.md",
+    "images/cc_CheckBearerCompatibility.png",
+    "images/networkoperators.png",
     "Untitled 1.md",
+    "Resources.md",
+    "images/pal_MemInterface_1.png",
+    "images/BearerCapabilityIESpec.png",
+    "Pasted image 20250622131738.png",
+    "images",
     "yash/CodeQL Database Querying.md",
     "yash/Mali Midgard Driver Compilation.md",
     "CWE.md",
